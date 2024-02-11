@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Maisons de Poudlard</title>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.2/dist/simple-lightbox.min.css"/>
+        
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header>
+            <img id="Harry-Potter" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Harry_Potter_wordmark.svg" alt="Harry Potter"/>
+        
+            <nav>
+                <ul>
+                    <li><a href="index.html">Maisons de Poudlard</a></li>
+                </ul>
+                <img src="lune.png" alt="lune" class="lune" />
+            </nav>
+
+            <div class="text-sur-image">
+                <h1>Les Maisons de Poudlard</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="swiper mon-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-Gry">
+                        <p class="title">Gryffondor</p>
+                        <p class="subtitle">Maison du courage</p>
+                    </div>
+
+                    <div class="swiper-slide slide-Serp">
+                        <p class="title">Serpentard</p>
+                        <p class="subtitle">Maison de l'ambition</p>
+                    </div>
+
+                    <div class="swiper-slide slide-Pou">
+                        <p class="title">Poufsouffle</p>
+                        <p class="subtitle">Maison de la loyauté</p>
+                    </div>
+
+                    <div class="swiper-slide slide-Serd">
+                        <p class="title">Serdaigle</p>
+                        <p class="subtitle">Maison de la sagesse</p>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <section class="Gryffondor">
+                <img src="https://www.boutique-lofficine.fr/img/blason-gryffondor.png" alt=""/>
+
+                <div class="texte">
+                    <h1>Gryffondor</h1>
+                    <p>La maison Gryffondor tient son nom de Godric Gryffondor, l'un des quatre fondateurs de l'école. Son blason est un lion doré sur fond rouge.</p>
+                </div>
+            </section>
+
+            <section class="Serpentard">
+                <div class="texte">
+                    <h1>Serpentard</h1>
+                    <p>La maison tient son nom de Salazar Serpentard, l'un des quatre fondateurs de l'école. Son emblème est le serpent, une référence aux pouvoirs de son fondateur, Salazar Serpentard, qui était un fourchelang.</p>
+                </div>
+                <img src="https://www.boutique-lofficine.fr/img/blason-serpentard.png" alt=""/>
+            </section>
+
+            <section class="Poufsouffle">
+                <img src="https://www.boutique-lofficine.fr/img/poufsouffle.png" alt=""/>
+
+                <div class="texte">
+                    <h1>Poufsouffle</h1>
+                    <p>La maison tient son nom de Helga Poufsouffle, l'un des quatre fondateurs de l'école. Son insigne représente un blaireau sur fond de jaune et noir, tel que le blé et la terre.</p>
+                </div>
+            </section>
+
+            <section class="Serdaigle">
+                <div class="texte">
+                    <h1>Serdaigle</h1>
+                    <p>La maison tient son nom de Rowena Serdaigle, l'un des quatre fondateurs de l'école. Son symbole est un aigle en bronze sur un fond bleu</p>
+                </div>
+
+                <img src="https://www.boutique-lofficine.fr/img/serdaigle.png" alt="" />
+            </section>
+
+            <div class="portfolio">
+                <div class="filters">
+                    <ul>
+                        <li data-filter="all" class="active">Toutes les Maisons</li>
+                        <li data-filter="Gryffondor">Gryffondor</li>
+                        <li data-filter="Serpentard">Serpentard</li>
+                        <li data-filter="Poufsouffle">Poufsouffle</li>
+                        <li data-filter="Serdaigle">Serdaigle</li>
+                    </ul>
+                </div>
+
+                <div class="portfolio-elements">
+                    <div class="card filtr-item" data-category="Gryffondor">
+                        <div class="card-header">
+                            <p class="card-title">Gryffondor</p>
+                            <div class="card-axe">courage</div>
+                        </div>
+
+                        <a href="./Gryf.webp">
+                            <img src="./Gryf.webp" alt="Gryffondor" />
+                        </a>
+                    </div>
+
+                    <div class="card filtr-item" data-category="Serpentard">
+                        <div class="card-header">
+                            <p class="card-title">Serpentard</p>
+                            <div class="card-axe">ambition</div>
+                        </div>
+
+                        <a href="./Serp.webp">
+                            <img src="./Serp.webp" alt="Serpentard" />
+                        </a>
+                    </div>
+
+                    <div class="card filtr-item" data-category="Poufsouffle">
+                        <div class="card-header">
+                            <p class="card-title">Poufsouffle</p>
+                            <div class="card-axe">loyauté</div>
+                        </div>
+            
+                        <a href="./Pou.webp">
+                        <img src="./Pou.webp" alt="poufsouffle" />
+                        </a>
+                    </div>
+                    
+                    <div class="card filtr-item" data-category="Serdaigle">
+                        <div class="card-header">
+                            <p class="card-title">Serdaigle</p>
+                            <div class="card-axe">sagesse</div>
+                        </div>
+                        
+                        <a href="./Serd.webp">
+                            <img src="./Serd.webp" alt="serdaigle" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="message-error">
+                <ul></ul>
+            </div>
+
+            <div class="message-success">Formulaire envoyé avec succès !</div>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="pseudo">Pseudo</label>
+                    <input type="text" name="pseudo" id="pseudo" />
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" />
+                </div>
+
+                <div>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" name="password" id="password" />
+                </div>
+
+                <div>
+                    <label for="password2">Confirmation du mdp</label>
+                    <input type="password" name="password" id="password2" />
+                </div>
+
+                <button type="submit">S'inscrire</button>
+            </form>
+        </main>
+
+        <footer></footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js" integrity="sha512-MMprw2AB5GAiQmXXEz5JYiGq2waU0iqD7Whj33m1w0V6Zzt1wyTFnr6rxWW8mfdQ/VksbUkU5c8sVGlO+3stew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.2/dist/simple-lightbox.min.js"></script>
+        <script src="main.js"></script>
+        
+    </body>
+</html>

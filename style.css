@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(5,10,30,0.7),rgba(5,10,30,0.7)),url(https://img.over-blog-kiwi.com/0/66/84/30/20200510/ob_d2cb15_les-quatre-maisons.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper {
+    height: 100vh;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 72px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding-top: 350px;
+}
+
+.subtitle {
+    letter-spacing: 3px;
+    font-size: 24px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.slide-Gry {
+    background-image: url('./gryff.jpg');
+    background-size: cover;
+}
+
+.slide-Serp {
+    background-image: url('./serpentard.jpg');
+    background-size: cover;
+}
+
+.slide-Pou {
+    background-image: url('./poufsouffle.jpg');
+    background-size: cover;
+}
+
+.slide-Serd {
+    background-image: url('./serdaigle.jpg');
+    background-size: cover;
+}
+
+.Gryffondor, .Poufsouffle, .Serpentard, .Serdaigle {
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.Gryffondor img, .Poufsouffle img, .Serpentard img, .Serdaigle img {
+    width: 200px;
+}
+
+nav{
+    display: flex;
+    padding: 0px 10px;
+    justify-content: center;
+    font-family: "Lato";
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: left;
+    gap: 20px;
+}
+
+ul li a:hover{
+    color: purple;
+    transition: 0.75s;
+}
+
+a{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#Harry-Potter{
+    width: 200px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-sur-image{
+    font-family: "Cinzel";
+    width: 90%;
+    color: white;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 900px){
+    nav {
+      font-size: 10px
+    }
+  }
+
+
+form {
+    margin-left: 700px;
+}
+
+form > div {
+    margin: 30px 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    height: 20px;
+    width: 40%;
+}
+
+button {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+
+.message-error {
+    border: 1px solid rgb(212, 42, 0);
+    color: rgb(212, 42, 0);
+    background-color: rgba(212, 42, 0, 0.4);
+    padding: 16px 32px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.message-success {
+    border: 1px solid rgb(281, 150, 2);
+    color: rgb(281, 150, 2);
+    background-color: rgba(113, 212, 0, 0.4);
+    padding: 16px 32px;
+    margin-bottom: 20px;
+    display: none;
+    text-align: center;
+}
+
+.success {
+    border: 1px solid rgb(281, 150, 2);
+    background-color: rgba(113, 212, 0, 0.4);
+}
+
+.message-error.visible {
+    display: block;
+}
+
+.lune {
+    width: 75px;
+    cursor: pointer;
+}
+
+.darkmode {
+    background: black;
+    color: white;
+}
+
+.portfolio {
+    padding: 80px 40px;
+    background-color: #F6F8FA;
+}
+
+.portfolio-elements {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px 0 !important;
+}
+
+.card {
+    width: 30%;
+    background-color: white;
+}
+
+.card-header {
+    padding: 20px 40px;
+}
+
+.card-title {
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: bold;
+    color: #222D3B;
+}
+
+.card-axe {
+    font-size: 14px;
+    color: #87878a;
+    margin-top: 6px;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.filters {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.filters ul {
+    display: flex;
+    gap: 20px;
+}
+
+.filters li {
+    color: #F6F8FA;
+    background-color: goldenrod;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.filters li.active {
+    background-color: gold;
+}
